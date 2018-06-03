@@ -1,0 +1,48 @@
+html,div,p,h1{
+  margin:0;
+  padding:0;
+  background-color: #001a33;
+}
+
+svg{
+  background-color: #001a33;
+}
+
+.collent{
+  color:white;
+}
+
+.node circle {
+  cursor: pointer;
+  stroke: #3182bd;
+  stroke-width: 1.5px;
+}
+
+.node text{
+  font: 12px sans-serif;
+  color:white;
+  font-weight: lighter;
+  pointer-events: none;
+  text-anchor: middle;
+}
+
+line.link {
+  fill: none;
+  stroke: #9ecae1;
+  stroke-width: 1.5px;
+}
+
+.collent{
+display: inline-block;
+background-color: yellow;
+}
+
+.reData{
+display: inline-block;
+background-color: blue;
+padding:10px;
+}
+
+.arc_text{
+  color:white;
+}

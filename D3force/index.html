@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<head>
+  <meta charset="utf-8">
+  <title>3次元データの可視化</title>
+  <link rel="stylesheet" href="stylesheet.css">
+</head>
+<body>
+
+
+  <div class="collent">
+    <div >
+      カレントノード:
+    </div>
+    <div id="nodeName">未選択</div>
+  </div>
+
+
+  <div class="reData">
+    <input id="renameBox" type="text" name="" value="">
+    <input id="renamebutton" type="button" name="rename" value="rename">
+  </div>
+
+
+  <input id="addNodeButton" type="button" name="追加" value="オブジェクト追加">
+  <input id="addCategoryButton" type="button" name="追加" value="カテゴリ追加">
+  <input id="addSubjectButton" type="button" name="追加" value="サブジェクト追加">
+  <input id="addTimeButton" type="button" name="追加" value="タイム追加">
+
+  <input id="number" max="100" min="0" type="number" name=""placeholder="点数">
+  <input id="numChange" type="button" name="" value="変更">
+
+
+<div class="changeNum">
+  <input id="number" max="100" min="0" type="number" name=""  placeholder="記録">
+  <input id="number" max="100" min="0" type="number" name=""  placeholder="目標値">
+<input type="text" name="example" placeholder="単位" list="data1">
+<datalist id="data1">
+<option value="kg"></option>
+<option value="m"></option>
+</datalist>
+  <input type="button" name="" value="変更">
+</div>
+
+
+<!--ダイアログの内容-->
+<div id="dialog_SelectUnit" title="形式選択">
+  記録の種類を選択してください<br/>
+</div>
+
+<div id="dialog_SelectNum" title="個数選択">
+  記録する個数を入力してください<br/>
+  <input id="dialog_SelectNum_Num" max="10" min="0" type="number" name=""  placeholder="個数">
+</div>
+
+<div id="dialog_InputData" title="データ入力">
+  データを入力してください<br/>
+</div>
+
+
+
+
+  <div id="nodeLength"></div>
+
+  <input id="deleteButton" type="button" name="" value="削除">
+
+
+
+
+</body>
+  <script src="http://d3js.org/d3.v3.min.js"></script>
+  <script src='https://code.jquery.com/jquery-2.2.4.min.js'></script>
+  <script src="https://ajax.googleapis.com/ajax/libs/jqueryui/1.12.1/jquery-ui.min.js"></script>
+<link rel="stylesheet" href="https://ajax.googleapis.com/ajax/libs/jqueryui/1.12.1/themes/smoothness/jquery-ui.css">
+
+  <script src="force.js"></script>

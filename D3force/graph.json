@@ -1,0 +1,36 @@
+{"name":"root",
+  "children":[
+  {
+    "name":"name1",
+    "size":100000,
+    "children": [
+     {
+      "name": "カテゴリ1",
+      "children": [
+       {
+        "name": "科目1",
+        "size":5000
+       },
+       {
+        "name": "科目2",
+        "size":5000
+       }
+      ]
+     },
+     {
+      "name": "カテゴリ2",
+      "children": [
+       {
+        "name": "科目1",
+        "size":3000
+       },
+       {
+        "name": "科目2",
+        "size":4000
+       }
+      ]
+     }
+    ]
+  }
+]
+}
